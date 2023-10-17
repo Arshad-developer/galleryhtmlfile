@@ -1,0 +1,52 @@
+body{
+    
+        background-image: url('https://img.freepik.com/premium-photo/abstract-white-design-background-with-smooth-wavy-lines_476363-6179.jpg');
+        background-size: cover; 
+        background-repeat: no-repeat; 
+}
+h1{
+text-align: center;
+}
+.buttoncontainer{
+   display:grid;
+    width:80%;
+    margin: auto;
+    grid-template-columns: auto auto auto auto auto;
+    grid-column-gap:10px;
+    
+}
+.btn{
+    text-align: center;
+    height: 40 px;
+    border:1px solid black ;
+    cursor: pointer;
+    letter-spacing: 2px;
+    line-height: 40px;
+    transition: background-color 0.5s, border-color 0.5s, color 0.5s;
+    background-image: url('');
+    color:black;
+    
+
+}
+.btn:hover{
+    background-color: black ;
+    border-color:yellow;
+    color:white;
+}
+.imagescontainer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap:10px ;
+    grid-row-gap: 10px;
+    width:80%;
+    margin:auto; 
+    padding-top: 15px;
+}
+.imagescontainer img{
+    display:block;
+    width:100% ;
+}
+.image img {
+    width: 300px;
+    height: 200px; 
+}
