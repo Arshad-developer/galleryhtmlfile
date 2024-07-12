@@ -1,52 +1,83 @@
-body{
-    
-        background-image: url('https://img.freepik.com/premium-photo/abstract-white-design-background-with-smooth-wavy-lines_476363-6179.jpg');
-        background-size: cover; 
-        background-repeat: no-repeat; 
+body {
+    background-image: url('https://img.freepik.com/premium-photo/abstract-white-design-background-with-smooth-wavy-lines_476363-6179.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
-h1{
-text-align: center;
-}
-.buttoncontainer{
-   display:grid;
-    width:80%;
-    margin: auto;
-    grid-template-columns: auto auto auto auto auto;
-    grid-column-gap:10px;
-    
-}
-.btn{
+
+h1 {
     text-align: center;
-    height: 40 px;
-    border:1px solid black ;
+    margin-top: 20px;
+    font-size: 2.5em;
+    color: #333;
+}
+
+.buttoncontainer {
+    display: grid;
+    width: 80%;
+    margin: auto;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 10px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    text-align: center;
+    height: 40px;
+    border: 1px solid black;
     cursor: pointer;
     letter-spacing: 2px;
     line-height: 40px;
     transition: background-color 0.5s, border-color 0.5s, color 0.5s;
-    background-image: url('');
-    color:black;
-    
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
 
+.btn:hover {
+    background-color: black;
+    border-color: yellow;
+    color: white;
 }
-.btn:hover{
-    background-color: black ;
-    border-color:yellow;
-    color:white;
-}
-.imagescontainer{
+
+.imagescontainer {
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-column-gap:10px ;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
     grid-row-gap: 10px;
-    width:80%;
-    margin:auto; 
+    width: 80%;
+    margin: auto;
     padding-top: 15px;
 }
-.imagescontainer img{
-    display:block;
-    width:100% ;
+
+.imagescontainer img {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
 }
+
 .image img {
-    width: 300px;
-    height: 200px; 
+    width: 100%;
+    height: auto;
+}
+
+/* Mobile responsive */
+@media (max-width: 769px) {
+    .buttoncontainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .imagescontainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .btn {
+        font-size: 0.9em;
+        padding: 5px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
 }
